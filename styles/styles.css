@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans&family=Poppins:wght@500&family=Roboto+Slab&family=Roboto:wght@500&family=Sacramento&family=Work+Sans:wght@400;700&display=swap');
+
+/* header styles */
+* {
+  margin: 0;
+}
+.header {
+  background-color: rgb(248, 241, 227);
+  padding: 50px 228px 1220px 228px;
+}
+.header-section{
+    display: flex;
+  justify-content: space-between;
+}
+.header-title {
+    font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;   
+
+}
+.menu{
+    margin-right: 20px;
+}
