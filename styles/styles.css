@@ -29,9 +29,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 60px 25px 12px;
 }
 .banner-title {
-  margin: 50px 250px 12px;
+  margin-bottom: 15px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -40,7 +41,7 @@
   text-align: center;
   font-weight: 400;
   font-size: 10px;
-  margin: 0px 250px 25px;
+  margin: 0px 25px 25px;
 }
 .btn-primary {
   background-color: #ff900e;
@@ -54,7 +55,7 @@
 }
 .banner img {
   width: 100%;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-bottom: 45px;
 }
 /* feature list styles */
@@ -240,44 +241,106 @@ input {
 
 /* footer styles */
 
-.copyright-section{
+.footer{
   margin: 100px 240px 70px;
   background-color: #FFF4E7;
   padding: 40px 270px;
   border-radius: 5px;
 }
-.copyright-section p{
+.footer p{
   font-weight: 400;
 font-size: 15px;
 }
 
-.footer {
-  background-color: #151414;
-  }
-  .footer-title {
-  color: #f8f8f8;
-  font-weight: 700;
-  font-size: 40px;
-  padding: 130px 0 24px 240px;
-  }
-  .footer-description {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 16px;
-  padding: 0 0 30px 240px;
-  line-height: 26px;
-  }
-  .footer-info {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 16px;
-  padding: 0 0 32px 240px;
-  line-height: 15px;
-  }
-
   /* Responsive Design */
 
-  @media screen and (max-width: 576px) {
+  @media only screen and (max-width: 576px) {
+    /* header styles */
+    .header{
+      padding: 40px 30px;
+      width: 100%;
+      flex-direction: column;
+  
+    }
+    .nav-bar{
+      display: flex;
+      flex-direction: column;
+    }
+    .banner img, .image-sub-section img, .image-architect img {
+      width: 100%;
+    }
+
+    /* feature-list styles */
+    .features {
+      padding: 0;
+    }
+
+    .feature-list{
+      padding: 30px 0;
+    }
+    .feature-sub-list {
+      margin-left: 40px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .image-section, .features {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 20px;
+    }
     
+
+    /* feature styles */
+
+     .feature-section{
+      margin: 15px 10px;
+     }
+
+    
+    .btn-secondary {
+      position: relative;
+      margin: 15px 130px;
+      
+    }
+    
+    .sponser{
+      padding: 0 0 0 55px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .sponser-image{
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 40px;
+    }
+    .spn-images{
+      margin-bottom: 50px;
+    }
+    /* login section styles */
+
+    .login-section{
+      margin: 50px 30px;
+     background-image: linear-gradient(to right, #f3ac54 , rgb(241, 241, 235));
+      background-color: aliceblue;
+      border-radius: 5px;
+    }
+    .login{
+      padding: 50px 20px;
+    }
+    .login input{
+      width: 100%;
+    }
+
+    .login-form{
+      flex-direction: column;
+    }
+    /* footer styles */
+
+    .footer{
+      margin: 20px 20px 50px;
+      padding: 40px 10px;
+    }
+ 
+    .hide{
+      display: none;
+    }
   }
   
