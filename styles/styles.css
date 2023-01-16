@@ -8,7 +8,7 @@
 }
 .header {
   background-color: rgb(248, 241, 227);
-  padding: 50px 228px 0 228px;
+  padding: 20px 228px 0 228px;
 }
 .header-section {
   display: flex;
@@ -79,7 +79,7 @@
 }
 .feature-list-details {
   font-size: 30px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 .feature-list-title {
   font-size: 30px;
@@ -133,11 +133,11 @@
   font-size: 20px;
 }
 .image-architect img {
-  width: 550px;
+  width: 520px;
 }
 .btn-secondary {
   position: absolute;
-  margin: 700px 0 0 450px;
+  margin: 700px 0 0 420px;
   width: 210px;
   height: 130px;
   background-color: #ff900e;
@@ -148,81 +148,90 @@
 
 /* facts styles */
 
-.facts{
+.facts {
   padding: 0 240px 100px;
 }
 
-.facts-title{
+.facts-title {
   margin: 0 0 20px 0;
 }
-.facts-box{
-  margin: 50px 50px 50px;
+.facts-box {
+  margin: 20px 20px 20px;
   display: flex;
   justify-content: space-between;
 }
-.box{
+.box {
   width: 130px;
   border: 1px solid #ff900e;
   border-radius: 5px;
   padding: 30px 25px;
   text-align: center;
 }
-.box-no{
+
+.box-no {
   margin-top: 10px;
   font-weight: 600;
-font-size: 25px;
+  font-size: 25px;
 }
-.box-info{
+.box-info {
   margin-top: 5px;
   font-weight: 600;
-font-size: 15px;
+  font-size: 15px;
   color: #727272;
 }
+/* animation over box */
+
+.box{
+  transition: transform 1s;
+}
+.box:hover{
+  transform: rotate(180deg);
+}
+
 /* sponser section styles */
 
-.sponser{
-  padding: 0 240px 110px; 
+.sponser {
+  padding: 0 240px 110px;
 }
-.sponser-info{
+.sponser-info {
   text-align: center;
 }
-.sponser-title{
+.sponser-title {
   margin-left: 0;
   margin-bottom: 20px;
 }
-.sponser-image{
-  margin-top: 50px;
+.sponser-image {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 40px;
   justify-content: space-between;
 }
-.image-part{
-  width: 150px;
+.image-part {
+  width: 120px;
   filter: grayscale(100%);
 }
 
-
 /* login styles */
 
-.login-section{
-  margin: 50px 240px 50px;
- background-image: linear-gradient(to right, #f3ac54 , rgb(241, 241, 235));
+.login-section {
+  margin: 20px 240px 20px;
+  background-image: linear-gradient(to right, #f3ac54, rgb(241, 241, 235));
   background-color: aliceblue;
   border-radius: 5px;
 }
-.login{
-  padding: 50px 240px 50px;
+.login {
+  padding: 20px 240px 20px;
 }
-.login-title{
+.login-title {
   font-size: 35px;
   margin-bottom: 15px;
 }
-.login-form{
+.login-form {
   display: flex;
   align-items: center;
 }
-.login-submit{
+.login-submit {
   margin-left: 15px;
   font-weight: 600;
   font-size: 18px;
@@ -235,112 +244,124 @@ input {
   background-color: white;
   border-radius: 5px;
   border: 1px solid gray;
-  }
-  
-
+}
 
 /* footer styles */
 
-.footer{
+.footer {
   margin: 100px 240px 70px;
-  background-color: #FFF4E7;
+  background-color: #fff4e7;
   padding: 40px 270px;
   border-radius: 5px;
 }
-.footer p{
+.footer p {
   font-weight: 400;
-font-size: 15px;
+  font-size: 15px;
 }
 
-  /* Responsive Design */
+/* Responsive Design */
 
-  @media only screen and (max-width: 576px) {
-    /* header styles */
-    .header{
-      padding: 40px 30px;
-      width: 100%;
-      flex-direction: column;
-  
-    }
-    .nav-bar{
-      display: flex;
-      flex-direction: column;
-    }
-    .banner img, .image-sub-section img, .image-architect img {
-      width: 100%;
-    }
-
-    /* feature-list styles */
-    .features {
-      padding: 0;
-    }
-
-    .feature-list{
-      padding: 30px 0;
-    }
-    .feature-sub-list {
-      margin-left: 40px;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .image-section, .features {
-      grid-template-columns: repeat(1, 1fr);
-      margin-bottom: 20px;
-    }
-    
-
-    /* feature styles */
-
-     .feature-section{
-      margin: 15px 10px;
-     }
-
-    
-    .btn-secondary {
-      position: relative;
-      margin: 15px 130px;
-      
-    }
-    
-    .sponser{
-      padding: 0 0 0 55px;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .sponser-image{
-      grid-template-columns: repeat(1, 1fr);
-      grid-column-gap: 40px;
-    }
-    .spn-images{
-      margin-bottom: 50px;
-    }
-    /* login section styles */
-
-    .login-section{
-      margin: 50px 30px;
-     background-image: linear-gradient(to right, #f3ac54 , rgb(241, 241, 235));
-      background-color: aliceblue;
-      border-radius: 5px;
-    }
-    .login{
-      padding: 50px 20px;
-    }
-    .login input{
-      width: 100%;
-    }
-
-    .login-form{
-      flex-direction: column;
-    }
-    /* footer styles */
-
-    .footer{
-      margin: 20px 20px 50px;
-      padding: 40px 10px;
-    }
- 
-    .hide{
-      display: none;
-    }
+@media only screen and (max-width: 576px) {
+  /* header styles */
+  .header {
+    padding: 40px 30px;
+    width: 100%;
+    flex-direction: column;
   }
-  
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner img,
+  .image-sub-section img,
+  .image-architect img {
+    width: 100%;
+  }
+
+  /* feature-list styles */
+  .features {
+    padding: 0;
+  }
+
+  .feature-list {
+    padding: 30px 0;
+  }
+  .feature-sub-list {
+    margin-left: 40px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image-section,
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+
+  /* feature styles */
+
+  .feature-section {
+    margin: 15px 10px;
+  }
+
+  .btn-secondary {
+    position: relative;
+    margin: 15px 130px;
+  }
+
+  /* facts styles */
+  .facts {
+    padding: 30px 10px 20px;
+    text-align: center;
+  }
+  .facts-box {
+    margin: 20px 20px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    margin-bottom: 20px;
+    transition: transform 1s;
+  }
+  .box:hover{
+    transform: rotate(180deg);
+  }
+
+
+  /* sponser styles */
+  .sponser {
+    padding: 0 0 0 55px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .sponser-image {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 40px;
+  }
+  .spn-images {
+    margin-bottom: 20px;
+  }
+  /* login section styles */
+
+  .login-section {
+    margin: 20px 30px;
+    background-image: linear-gradient(to right, #f3ac54, rgb(241, 241, 235));
+    background-color: aliceblue;
+    border-radius: 5px;
+  }
+  .login {
+    padding: 20px 20px;
+  }
+  .login input {
+    width: 100%;
+  }
+
+  .login-form {
+    flex-direction: column;
+  }
+  /* footer styles */
+
+  .footer {
+    margin: 20px 20px 20px;
+    padding: 40px 10px;
+  }
+}
